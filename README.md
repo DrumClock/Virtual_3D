@@ -3,9 +3,9 @@
 Makra jsou univerzální pro tyto konfigurace tiskárny:
 
 - single carriage pro 1 až 4 extrudery
-- dual carriige (IDEX) pro 1 až 4 extrudery
+- dual carriige (IDEX) pro 2 až 4 extrudery
 
-Jsou zde také soubory pro LCD 12864 nebo OLED displeje.
+Jsou zde soubory pro LCD 12864 nebo OLED displeje.
 - v adresáři **`/LCD`**  jsou HW konfigurace displeje 
 - v adresáři **`/MENU`** jsou definované jednotlivé obrazovky displeje.
 
