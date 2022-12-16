@@ -32,8 +32,8 @@ Jsou zde soubory pro LCD 12864 nebo OLED displeje.
 [include /home/pi/my_config/4EX2/*]
 ```
 
-# Proměnné pro makra se vytvoří pomocí [RUN_MACRO_INIT]
-automaticky z konfigurace tiskárny a to po restartu FW např.
+# Proměnné pro makra se vytvoří pomocí RUN_MACRO_INIT 
+spuštěného v [delayed_gcode _INIT] z konfigurace tiskárny a to po restartu FW např.
 
 ```
 printer['gcode_macro VARIABLE'].aaa = {'printer': '4EX2'}
@@ -44,7 +44,6 @@ printer['gcode_macro VARIABLE'].default_carriage_tool = {0: ['extruder', 'extrud
 printer['gcode_macro VARIABLE'].default_t_extruder = {0: 'extruder', 1: 'extruder1', 2: 'extruder2', 3: 'extruder3'}
 printer['gcode_macro VARIABLE'].extrude_factor = {'extruder3': 1.0, 'extruder1': 1.0, 'extruder2': 1.0, 'extruder': 1.0}
 printer['gcode_macro VARIABLE'].fan = {'active': 0, 'menu': True, 'index': ['fan', 'fan1']}
-printer['gcode_macro VARIABLE'].filament_sensor = {}
 printer['gcode_macro VARIABLE'].hotend_offset = {0: {'y': 0.0, 'x': 0.0, 'z': 0.0}, 1: {'y': 0.0, 'x': -10.0, 'z': 0.0}, 2: {'y': 0.0, 'x': 0.0, 'z': 0.0}, 3: {'y': 0.0, 'x': -10.0, 'z': 0.0}, 'change_T0': False}
 printer['gcode_macro VARIABLE'].idex_mode = {'active': 1, 'movespeed': 500, 'feedrate': 30000, 'position': {'dupl_max': 120, 'dupl_min': 52, 'mirrored': 240}, 'carriage_offset': 0}
 printer['gcode_macro VARIABLE'].neopixel = {'index': {0: 'axis_X'}, 'RGB': {0: '0,0,0'}, 'enable': True, 'menu': {'active': 0}}
