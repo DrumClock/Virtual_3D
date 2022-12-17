@@ -1,4 +1,10 @@
-# test
+# Informace
+
+Všechny uvedené složky a soubory jsou v Raspberry uložené zde:  **`/home/pi/my_config/`**
+
+Pro zobrazení složky **`my_config`** v rozhranní **Mainsail** je nutné vytvořit "soft-link" pomocí:
+
+**` ln -s /home/pi/my_config /home/pi/klipper_config/my_config `**
 
 Makra jsou univerzální pro tyto konfigurace tiskárny:
 
@@ -57,8 +63,6 @@ printer['gcode_macro VARIABLE'].tool_change = {'delay': {'extruder': 250, 'extru
 printer['gcode_macro VARIABLE'].tower = {'tool': {0: {'nozzle': 0.4, 'z': 0.0}, 1: {'nozzle': 0.4, 'z': 0.0}, 2: {'nozzle': 0.6, 'z': 0.0}, 3: {'nozzle': 0.8, 'z': 0.0}}, 'enable': False, 'pos': {'y': 200.0, 'x': 200.0}, 'change': True, 'gap': {'y': 40, 'x': 50}}
 ```
 
-Pro zobrazení složky **`my_config`** v rozhranní **Mainsail** je nutné vytvořit "soft link" pomocí:
 
-` ln -s /home/pi/my_config /home/pi/klipper_config/my_config `
 
 #
