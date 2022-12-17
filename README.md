@@ -6,12 +6,12 @@ Pro zobrazení složky **`my_config`** v rozhranní **Mainsail** je nutné vytvo
 
 **` ln -s /home/pi/my_config /home/pi/klipper_config/my_config `**
 
-Makra jsou univerzální pro tyto konfigurace tiskárny:
+# Makra jsou univerzální pro tyto konfigurace
 
 - single carriage pro 1 až 4 extrudery
 - dual carriige (IDEX) pro 2 až 4 extrudery
 
-Jsou zde soubory pro LCD 12864 nebo OLED displeje.
+Soubory pro LCD 12864 nebo OLED displeje jsou zde:
 - v adresáři **`/LCD`**  jsou HW konfigurace displeje 
 - v adresáři **`/MENU`** jsou definované jednotlivé obrazovky displeje.
 
