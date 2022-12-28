@@ -1,3 +1,6 @@
+# Now tested 
+- dual gantry (dual XY axis) - new [kinematics: dualgantry_cartesian]
+
 # Informace
 
 Všechny uvedené složky a soubory jsou v Raspberry uložené zde:  **`/home/pi/my_config/`**
@@ -8,7 +11,7 @@ Pro zobrazení složky **`my_config`** v rozhranní **Mainsail** je nutné vytvo
 
 # Makra jsou univerzální pro tyto konfigurace
 
-- single carriage pro 1 až 4 extrudery
+- single carriage pro 2 až 4 extrudery
 - dual carriige (IDEX) pro 2 až 4 extrudery
 
 Soubory pro LCD 12864 nebo OLED displeje jsou zde:
