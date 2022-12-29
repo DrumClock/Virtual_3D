@@ -1,5 +1,5 @@
-# Now tested 
-- dual gantry (dual XY axis) - new [kinematics: dualgantry_cartesian]
+# Testuji 
+- **DUAL GANTRY** (dvojitý portál X/Y) - nová kinematika  **`dualgantry_cartesian`**
 
 # Informace
 
