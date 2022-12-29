@@ -1,5 +1,7 @@
 # Testuji 
-- **DUAL GANTRY** (dvojitý portál X/Y) - nová kinematika  **`dualgantry_cartesian`**
+- **DUAL GANTRY** (dvojitý portál) - nová kinematika  **`dualgantry_cartesian`** 
+
+ Je typ kinematiky pro dvě nástrojové hlavy, které se pohybují pomocí dvou zcela nezávislých os XY.
 
 # Informace
 
