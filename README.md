@@ -4,6 +4,7 @@
  Je typ kinematiky pro dvě nástrojové hlavy, které se pohybují pomocí dvou zcela nezávislých os XY.
   
  Makro je zde: [ACTIVATE_dual_gantry.cfg](https://github.com/DrumClock/my_config/blob/main/DUAL_GANTRY/ACTIVATE_dual_gantry.cfg)
+ Video testu na: [Virtual Printer](https://youtu.be/5AJfQ59xB38)
 
 # Informace
 
