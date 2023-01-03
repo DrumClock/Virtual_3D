@@ -54,7 +54,7 @@ spuštěného v [delayed_gcode _INIT] z konfigurace tiskárny a to po restartu F
 printer['gcode_macro VARIABLE'].aaa = {'printer': '4EX2'}
 printer['gcode_macro VARIABLE'].active = {'z': {'restore': 4.0, 'print_offset': 0.0, 'hop': 4.0}, 'mode': 0}
 printer['gcode_macro VARIABLE'].beeper = {'enable': True, 'silent': False, 'output_pin': 'beeper'}
-printer['gcode_macro VARIABLE'].carriage_park = {'endstop': [-52, 298], 'movespeed': 500, 'feedrate': 30000, 'enable': True, 'sync': True}
+printer['gcode_macro VARIABLE'].dual_carriage = {'parking': [-52, 298], 'movespeed': 500, 'feedrate': 30000, 'auto_exchange': True, 'sync_exchange': True}
 printer['gcode_macro VARIABLE'].toolhead = {0: ['extruder', 'extruder1'], 1: ['extruder2', 'extruder3']}
 printer['gcode_macro VARIABLE'].tool = {0: 'extruder', 1: 'extruder1', 2: 'extruder2', 3: 'extruder3'}
 printer['gcode_macro VARIABLE'].extrude_factor = {'extruder3': 1.0, 'extruder1': 1.0, 'extruder2': 1.0, 'extruder': 1.0}
