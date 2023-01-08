@@ -13,7 +13,7 @@ Všechny uvedené složky a soubory jsou v Raspberry uložené zde:  **`/home/pi
 
 Pro zobrazení složky **`my_config`** v rozhranní **Mainsail** je nutné vytvořit "soft-link" pomocí:
 
-**` ln -s /home/pi/my_config /home/pi/klipper_config/my_config `**
+**` ln -s /home/pi/my_config /home/pi/xxx/my_config `**   (xxx - adresář s cfg např. klipper_config)
 
 # Makra jsou univerzální pro tyto konfigurace
 
