@@ -38,9 +38,19 @@ Pro zobrazení složky **`my_config`** v rozhranní **Mainsail** je nutné vytvo
 - single carriage pro 2 až 4 extrudery
 - dual carriige (IDEX) pro 2 až 4 extrudery
 
-Soubory pro LCD 12864 nebo OLED displeje jsou zde:
-- v adresáři **`/LCD`**  jsou HW konfigurace displeje 
-- v adresáři **`/MENU`** jsou definované jednotlivé obrazovky displeje.
+# Popis adresářů:
+
+- **`/4EX2`**          - rozšíření IDEX modu M605 na 4 extrudery
+- **`/DUAL_GANTRY`**   - dvojitý portál X/Y 
+- **`/IDEX`**          - M605 mody - DUPLICATION a MIRRORED
+- **`/LCD`**           - HW konfigurace pro LCD nebo OLED displeje 
+- **`/MACRO`**         - univerzální makra pro 2-4 extrudery 
+- **`/MCU`**           - HW konfigurace MCU desek
+- **`/MENU`**          - menu obrazovky pro displeje
+- **`/P_L_R`**         - mod POWER LOSS RECOVERY  - **ve vývoji**
+- **`/PRINTER`**       - definice druhu tiskárny pro testy
+- **`/TEST`**          - testovací makra
+- **`/W_T`**           - mod WIPE TOWER  - **ve vývoji**
 
 # Jednotlivá makra se načítají pomocí [include ...] např.
 
