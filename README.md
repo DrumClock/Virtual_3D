@@ -1,4 +1,22 @@
 # Testuji 
+14.1.2023
+
+- **ENDLESS SPOOL** - nekonečná cívka (označovaný jako **Backup mode** )
+
+ Pokud je detekován konec filamentu pomocí sensoru (switch nebo motion), dojde k výměně extruderu který má filament.
+  
+ Zároveň jsou všechny tiskové G-cody  **`Tx`** směrovány na nový extruder a to včetně  **`M104 / M109`**.
+ 
+ Proavidlo pro náhradu extruderu je následující:  **extruder > extruder1 > extruder2 > extruder3 > etc**
+ 
+ První extruder který má detekovaný filament se použije.
+ 
+ Makro je zde: [ENDLESS_SPOOL_macro.cfg](https://github.com/DrumClock/my_config/blob/main/TEST/ENDLESS_SPOOL_macro.cfg)
+  
+#
+
+26.12.2022
+
 - **DUAL GANTRY** (dvojitý portál) - nová kinematika  **`dualgantry_cartesian`** 
 
  Je typ kinematiky pro dvě nástrojové hlavy, které se pohybují pomocí dvou zcela nezávislých os XY.
