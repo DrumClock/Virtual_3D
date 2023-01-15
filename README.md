@@ -39,18 +39,21 @@ Pro zobrazení složky **`my_config`** v rozhranní **Mainsail** je nutné vytvo
 - dual carriige (IDEX) pro 2 až 4 extrudery
 
 # Popis adresářů:
-
-- **`4EX2`**          - rozšíření IDEX modu M605 na 4 extrudery
-- **`DUAL_GANTRY`**   - dvojitý portál X/Y 
-- **`IDEX`**          - M605 mody - DUPLICATION a MIRRORED
+**Klipper zatím nepodoruje - moduly pro testování poskytl Tircown**
+- **`IDEX`**          - M605 mody - DUPLICATION a MIRRORED 
+- **`4EX2`**          - rozšíření IDEX modu M605 pro 4 extrudery (dvoubarevný tisk DUPLICATION a MIRRORED)
+- **`DUAL_GANTRY`**   - dvojitý portál X/Y  
+#
 - **`LCD`**           - HW konfigurace pro LCD nebo OLED displeje 
 - **`MACRO`**         - univerzální makra pro 2-4 extrudery 
 - **`MCU`**           - HW konfigurace MCU desek
 - **`MENU`**          - menu obrazovky pro displeje
-- **`P_L_R`**         - mod POWER LOSS RECOVERY  - **ve vývoji**
 - **`PRINTER`**       - definice druhu tiskárny pro testy
 - **`TEST`**          - testovací makra
-- **`W_T`**           - mod WIPE TOWER  - **ve vývoji**
+#
+**ve vývoji maker**
+- **`P_L_R`**         - mod POWER LOSS RECOVERY  
+- **`W_T`**           - mod WIPE TOWER 
 
 # Jednotlivá makra se načítají pomocí [include ...] např.
 
