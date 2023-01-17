@@ -11,7 +11,7 @@
  
  První extruder který má detekovaný filament se použije.
  
- Makro je zde: [ENDLESS_SPOOL_macro.cfg](https://github.com/DrumClock/my_config/blob/main/TEST/ENDLESS_SPOOL_macro.cfg)
+ Makro je zde: [ENDLESS_SPOOL_macro.cfg](https://github.com/DrumClock/my_config/blob/main/MACRO/ENDLESS_SPOOL_macro.cfg)
   
 #
 
