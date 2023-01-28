@@ -3,7 +3,7 @@
 
 - **ENDLESS SPOOL** - nekonečná cívka (označovaný jako **Backup mode** )
 
- Pokud je detekován konec filamentu pomocí sensoru (switch nebo motion), dojde k výměně extruderu který má filament.
+ Pokud je detekován konec filamentu pomocí sensoru (switch nebo motion), dojde k výměně za extruder který má filament.
   
  Zároveň jsou všechny tiskové G-cody  **`Tx`** směrovány na nový extruder a to včetně  **`M104 / M109`**.
  
@@ -44,12 +44,16 @@ Pro zobrazení složky **`my_config`** v rozhranní **Mainsail** je nutné vytvo
 - **`4EX2`**          - rozšíření IDEX modu M605 pro 4 extrudery (dvoubarevný tisk DUPLICATION a MIRRORED)
 - **`DUAL_GANTRY`**   - dvojitý portál X/Y  
 #
-- **`LCD`**           - HW konfigurace pro LCD nebo OLED displeje 
-- **`MACRO`**         - univerzální makra pro 2-4 extrudery 
+- **`SWITCHING EXT`** - makro pro SWITCHING EXTRUDER / HOTEND  
+#
+- **`MAIN`**          - základní univerzální makra pro 2-4 extrudery 
+- **`MACRO`**         - rozšířená univerzální makra  
 - **`MCU`**           - HW konfigurace MCU desek
-- **`MENU`**          - menu obrazovky pro displeje
 - **`PRINTER`**       - definice druhu tiskárny pro testy
 - **`TEST`**          - testovací makra
+#
+- **`LCD`**           - HW konfigurace pro LCD nebo OLED displeje 
+- **`MENU`**          - menu obrazovky pro displeje
 #
 **ve vývoji maker**
 - **`P_L_R`**         - mod POWER LOSS RECOVERY  
@@ -69,7 +73,9 @@ Pro zobrazení složky **`my_config`** v rozhranní **Mainsail** je nutné vytvo
 [include /home/pi/my_config/LCD/display_LCD12864_rumba_32.cfg]
 [include /home/pi/my_config/LCD/group_klipper_logo.cfg]
 [include /home/pi/my_config/LCD/group_16x4_main.cfg]
+
 [include /home/pi/my_config/MENU/*]
+
 
 ### users mareo configurations  ###
 
