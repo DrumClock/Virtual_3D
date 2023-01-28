@@ -44,7 +44,7 @@ Pro zobrazení složky **`my_config`** v rozhranní **Mainsail** je nutné vytvo
 - **`4EX2`**          - rozšíření IDEX modu M605 pro 4 extrudery (dvoubarevný tisk DUPLICATION a MIRRORED)
 - **`DUAL_GANTRY`**   - dvojitý portál X/Y  
 #
-- **`SWITCHING EXT`** - makro pro SWITCHING EXTRUDER / HOTEND  
+- **`SWITCHING`** - makro pro SWITCHING EXTRUDER / HOTEND  
 #
 - **`MAIN`**          - základní univerzální makra pro 2-4 extrudery 
 - **`MACRO`**         - rozšířená univerzální makra  
