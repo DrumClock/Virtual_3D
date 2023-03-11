@@ -19,15 +19,15 @@
 
 14.1.2023
 
-- **ENDLESS SPOOL** - nekoneƒçn√° c√≠vka (oznaƒçovan√Ω jako **Backup mode** )
+- **ENDLESS SPOOL** - nekoneËn· cÌvka (oznaËovan˝ jako **Backup mode** )
 
- Pokud je detekov√°n konec filamentu pomoc√≠ sensoru (switch nebo motion), dojde k v√Ωmƒõnƒõ za extruder kter√Ω m√° filament.
+ Pokud je detekov·n konec filamentu pomocÌ sensoru (switch nebo motion), dojde k v˝mÏnÏ za extruder kter˝ m· filament.
   
- Z√°rove≈à jsou v≈°echny tiskov√© G-cody  **`Tx`** smƒõrov√°ny na nov√Ω extruder a to vƒçetnƒõ  **`M104 / M109`**.
+ Z·rove≈à jsou vöechny tiskovÈ G-cody  **`Tx`** smÏrov·ny na nov˝ extruder a to vËetnÏ  **`M104 / M109`**.
  
- Proavidlo pro n√°hradu extruderu je n√°sleduj√≠c√≠:  **extruder > extruder1 > extruder2 > extruder3 > etc**
+ Proavidlo pro n·hradu extruderu je n·sledujÌcÌ:  **extruder > extruder1 > extruder2 > extruder3 > etc**
  
- Prvn√≠ extruder kter√Ω m√° detekovan√Ω filament se pou≈æije.
+ PrvnÌ extruder kter˝ m· detekovan˝ filament se pou≈æije.
  
  Makro je zde: [ENDLESS_SPOOL_macro.cfg](https://github.com/DrumClock/my_config/blob/main/MACRO/ENDLESS_SPOOL_macro.cfg)
   
@@ -35,9 +35,9 @@
 
 26.12.2022
 
-- **DUAL GANTRY** (dvojit√Ω port√°l) - nov√° kinematika  **`dualgantry_cartesian`** 
+- **DUAL GANTRY** (dvojit˝ port·l) - nov· kinematika  **`dualgantry_cartesian`** 
 
- Je typ kinematiky pro dvƒõ n√°strojov√© hlavy, kter√© se pohybuj√≠ pomoc√≠ dvou zcela nez√°visl√Ωch os XY.
+ Je typ kinematiky pro dvÏ n·strojovÈ hlavy, kterÈ se pohybujÌ pomocÌ dvou zcela nez·visl˝ch os XY.
   
  Makro je zde: [ACTIVATE_dual_gantry.cfg](https://github.com/DrumClock/my_config/blob/main/DUAL_GANTRY/ACTIVATE_dual_gantry.cfg)
     
@@ -45,39 +45,39 @@
 
 # Informace
 
-V≈°echny uveden√© slo≈æky a soubory jsou v Raspberry ulo≈æen√© zde:  **`/home/pi/my_config/`**
+Vöechny uvedenÈ slo≈æky a soubory jsou v Raspberry ulo≈æenÈ zde:  **`/home/pi/my_config/`**
 
-Pro zobrazen√≠ slo≈æky **`my_config`** v rozhrann√≠ **Mainsail** je nutn√© vytvo≈ôit "soft-link" pomoc√≠:
+Pro zobrazenÌ slo≈æky **`my_config`** v rozhrannÌ **Mainsail** je nutnÈ vytvo≈ôit "soft-link" pomocÌ:
 
-**` ln -s /home/pi/my_config /home/pi/xxx/my_config `**   (xxx - adres√°≈ô s cfg nap≈ô. klipper_config)
+**` ln -s /home/pi/my_config /home/pi/xxx/my_config `**   (xxx - adres·≈ô s cfg nap≈ô. klipper_config)
 
-# Makra jsou univerz√°ln√≠ pro tyto konfigurace
+# Makra jsou univerz·lnÌ pro tyto konfigurace
 
 - single carriage pro 2 a≈æ 4 extrudery
 - dual carriige (IDEX) pro 2 a≈æ 4 extrudery
 
-# Popis adres√°≈ô≈Ø:
-**Klipper zat√≠m nepodoruje - moduly pro testov√°n√≠ poskytl Tircown**
+# Popis adres·≈ô≈Ø:
+**Klipper zatÌm nepodoruje - moduly pro testov·nÌ poskytl Tircown**
 - **`IDEX`**          - M605 mody - DUPLICATION a MIRRORED 
-- **`4EX2`**          - roz≈°√≠≈ôen√≠ IDEX modu M605 pro 4 extrudery (dvoubarevn√Ω tisk DUPLICATION a MIRRORED)
-- **`DUAL_GANTRY`**   - dvojit√Ω port√°l X/Y  
+- **`4EX2`**          - rozöÌ≈ôenÌ IDEX modu M605 pro 4 extrudery (dvoubarevn˝ tisk DUPLICATION a MIRRORED)
+- **`DUAL_GANTRY`**   - dvojit˝ port·l X/Y  
 #
 - **`SWITCHING`** - makro pro SWITCHING EXTRUDER / HOTEND  
 #
-- **`MAIN`**          - z√°kladn√≠ univerz√°ln√≠ makra pro 2-4 extrudery 
-- **`MACRO`**         - roz≈°√≠≈ôen√° univerz√°ln√≠ makra  
+- **`MAIN`**          - z·kladnÌ univerz·lnÌ makra pro 2-4 extrudery 
+- **`MACRO`**         - rozöÌ≈ôen· univerz·lnÌ makra  
 - **`MCU`**           - HW konfigurace MCU desek
-- **`PRINTER`**       - definice druhu tisk√°rny pro testy
-- **`TEST`**          - testovac√≠ makra
+- **`PRINTER`**       - definice druhu tisk·rny pro testy
+- **`TEST`**          - testovacÌ makra
 #
 - **`LCD`**           - HW konfigurace pro LCD nebo OLED displeje 
 - **`MENU`**          - menu obrazovky pro displeje
 #
-**ve v√Ωvoji maker**
+**ve v˝voji maker**
 - **`P_L_R`**         - mod POWER LOSS RECOVERY  
 - **`W_T`**           - mod WIPE TOWER 
 
-# Jednotliv√° makra se naƒç√≠taj√≠ pomoc√≠ [include ...] nap≈ô.
+# Jednotliv· makra se naËÌtajÌ pomocÌ [include ...] nap≈ô.
 
 ```
 ### MCU configurations  ###
@@ -102,8 +102,8 @@ Pro zobrazen√≠ slo≈æky **`my_config`** v rozhrann√≠ **Mainsail** je nutn√© vytvo
 [include /home/pi/my_config/4EX2/*]
 ```
 
-# Promƒõnn√© pro makra se vytvo≈ô√≠ pomoc√≠ RUN_MACRO_INIT 
-spu≈°tƒõn√©ho v [delayed_gcode _INIT] z konfigurace tisk√°rny a to po restartu FW nap≈ô.
+# PromÏnnÈ pro makra se vytvo≈ôÌ pomocÌ RUN_MACRO_INIT 
+spuötÏnÈho v [delayed_gcode _INIT] z konfigurace tisk·rny a to po restartu FW nap≈ô.
 
 ```
 printer['gcode_macro VARIABLE'].aaa = {'printer': '4EX2'}
