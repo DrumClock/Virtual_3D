@@ -1,4 +1,22 @@
 # Testuji 
+
+#
+
+11.3.2022
+
+- **MULTI HOTEND** 
+
+ Pokud je pouûit hotend typu 2 IN 1 OUT ( nebo xx IN 1 OUT), je provedena 
+
+ automatick· v˝mÏna filamentu mimo tiskovou ploxchu.
+
+ Defaultne je to nasaveno na pozici endstopu + 20 mmm. Otestov·no i na IDEX 
+
+ Makro je zde: [MULTI_HOTEND.cfg](https://github.com/DrumClock/my_config/blob/main/MULTI/MULTI_HOTEND.cfg)
+
+ Toto makro je automaticky vol·nÈ z maker : SETINGS_TOOL, ACTIVATE_CARRIAGE, ACTIVATE_GANTRY 
+ 
+
 14.1.2023
 
 - **ENDLESS SPOOL** - nekoneƒçn√° c√≠vka (oznaƒçovan√Ω jako **Backup mode** )
