@@ -33,7 +33,7 @@
  
  Proavidlo pro náhradu extruderu je následující:  **extruder > extruder1 > extruder2 > extruder3 > etc**
  
- První extruder který má detekovaný filament se pouĹľije.
+ První extruder který má detekovaný filament se použije.
  
  Makro je zde: [ENDLESS_SPOOL_macro.cfg](https://github.com/DrumClock/my_config/blob/main/MACRO/ENDLESS_SPOOL_macro.cfg)
   
@@ -51,16 +51,16 @@
 
 # Informace
 
-Všechny uvedené sloĹľky a soubory jsou v Raspberry uloĹľené zde:  **`/home/pi/my_config/`**
+Všechny uvedené složky a soubory jsou v Raspberry uložené zde:  **`/home/pi/my_config/`**
 
-Pro zobrazení sloĹľky **`my_config`** v rozhranní **Mainsail** je nutné vytvořit "soft-link" pomocí:
+Pro zobrazení složky **`my_config`** v rozhranní **Mainsail** je nutné vytvořit "soft-link" pomocí:
 
 **` ln -s /home/pi/my_config /home/pi/xxx/my_config `**   (xxx - adresář s cfg např. klipper_config)
 
 # Makra jsou univerzální pro tyto konfigurace
 
-- single carriage pro 2 aĹľ 4 extrudery
-- dual carriige (IDEX) pro 2 aĹľ 4 extrudery
+- single carriage pro 2 až 4 extrudery
+- dual carriige (IDEX) pro 2 až 4 extrudery
 
 # Popis adresářů:
 **Klipper zatím nepodoruje - moduly pro testování poskytl Tircown**
