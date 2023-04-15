@@ -1,6 +1,5 @@
 # Testuji 
 
-#
 
 11.3.2022
 
@@ -10,12 +9,19 @@
 
  automatická výměna filamentu mimo tiskovou ploxchu.
 
- Defaultne je to nasaveno na pozici endstopu + 20 mmm. Otestováno i na IDEX 
+ Defaultne je to nasaveno na pozici endstopu + 20 mmm. Otestováno i na IDEX.
+ 
+ Proměnná pro aktualně zavedený filament se ukládá na SD kartu, takže po zapnutí tiskárny
+ 
+ je nastavena poslední kofigurace.
 
  Makro je zde: [MULTI_HOTEND.cfg](https://github.com/DrumClock/my_config/blob/main/MULTI/MULTI_HOTEND.cfg)
 
- Toto makro je automaticky voláné z maker : SETINGS_TOOL, ACTIVATE_CARRIAGE, ACTIVATE_GANTRY 
+ Toto makro je automaticky voláné z makra : SETINGS_TOOL
  
+ Pro tiskárny na systemu IDEX z makra : ACTIVATE_CARRIAGE 
+ 
+ #
 
 14.1.2023
 
