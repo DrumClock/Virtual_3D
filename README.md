@@ -64,9 +64,10 @@ Pro zobrazení složky **`my_config`** v rozhranní **Mainsail** je nutné vytvo
 
 # Popis adresářů:
 **Klipper zatím nepodoruje - moduly pro testování poskytl Tircown**
-- **`IDEX`**          - M605 mody - DUPLICATION a MIRRORED 
-- **`4EX2`**          - rozšíření IDEX modu M605 pro 4 extrudery (dvoubarevný tisk DUPLICATION a MIRRORED)
 - **`DUAL_GANTRY`**   - dvojitý portál X/Y  
+#
+- **`IDEX`**          - M605 mody - COPY a MIRRORED 
+- **`4EX2`**          - rozšíření IDEX modu M605 pro 4 extrudery (dvoubarevný tisk COPY a MIRRORED)
 #
 - **`SWITCHING`**      - makro pro SWITCHING EXTRUDER / HOTEND  
 - **`MULTI`**          - makro pro MULTI-HOTENDY typi 2 IN 1 OUT
