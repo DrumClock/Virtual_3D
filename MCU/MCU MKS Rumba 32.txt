@@ -1,0 +1,28 @@
+
+===  Building and flashing the micro-controller ===
+
+  - cd ~/klipper/
+   make menuconfig
+
+  - make
+
+   === MKS Rumba32 ===
+   >> compiled for the STMicroelectronics STM32.
+   >> Processor model STM32F446.
+   >> Clock Reference 12 MHz crystal
+   >> No Bootloader.
+   >> USB PA11/PA12
+
+  - ls /dev/serial/by-id/*
+  
+   >> /dev/serial/by-id/usb-Klipper_stm32f446xx_320061000E51393036363933-if00
+
+  - sudo service klipper stop
+  - make flash FLASH_DEVICE=/dev/serial/by-id/usb-Klipper_stm32f446xx_320061000E51393036363933-if00
+    ( <<<DFU mode Rumba32 >>>   make flash FLASH_DEVICE=0483:df11 )
+  - sudo service klipper start
+
+ 
+
+
+
