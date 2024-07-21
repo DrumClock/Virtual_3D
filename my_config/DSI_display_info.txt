@@ -1,0 +1,64 @@
+
+info:  https://klipperscreen-github-io.translate.goog/KlipperScreen/Hardware/?_x_tr_sl=en&_x_tr_tl=cs&_x_tr_hl=cs&_x_tr_pto=wapp
+
+======================= Klippersreen otočení DSI displeje ==================
+
+'vytvořit /usr/share/X11/xorg.conf.d/90-monitor.conf'
+
+sudo nano /usr/share/X11/xorg.conf.d/90-monitor.conf
+
+'Vložit sekci s konfigurací:'
+
+-- zadat ---
+
+Section "Monitor"
+    Identifier "DSI-1"
+    # This identifier would be the same as the name of the connector printed by xrandr.
+    # it can be "HDMI-0" "DisplayPort-0", "DSI-0", "DVI-0", "DPI-0" etc
+
+    Option "Rotate" "left"
+    # Valid rotation options are normal,inverted,left,right
+
+
+    Option "PreferredMode" "800x400"
+    # May be necesary if you are not getting your prefered resolution.
+EndSection
+
+--- CTRL+X  Y  ---
+
+'Uložit a restartovat KlipperScreen.'
+
+sudo service KlipperScreen restart
+
+
+================================= otočení dotykové Matrix =============================
+'zjistit název displeje přes HSS terminal'
+
+ DISPLAY=:0 xinput
+ 
+'výpis HSS'
+
+ Virtual core pointer            id=2    [master pointer  (3)]
+    Virtual core XTEST pointer     id=4    [slave  pointer  (2)]
+    generic ft5x06 (79)             id=6    [slave  pointer  (2)]
+ Virtual core keyboard           id=3    [master keyboard (2)]
+    Virtual core XTEST keyboard    id=5    [slave  keyboard (3)]
+
+ 
+=============================== pro trvalou změnu po restartu Raspberry  ====================================
+ 
+'vytvořit /etc/udev/rules.d/51-touchscreen.rules' 
+sudo nano /etc/udev/rules.d/51-touchscreen.rules
+
+'Vložit sekci s konfigurací:'
+
+
+ -- nebo -- 
+ACTION=="add", ATTRS{name}=="generic ft5x06 (79)", ENV{LIBINPUT_CALIBRATION_MATRIX}="0 -1 1 1 0 0 0 0 1"
+
+--- CTRL+X  Y  ---
+
+'restart Rpi'
+
+sudo reboot
+=============================================================================
